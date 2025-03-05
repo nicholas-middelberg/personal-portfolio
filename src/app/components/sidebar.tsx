@@ -9,6 +9,8 @@ export default function Sidebar() {
             <nav className="mt-6">
                 <ul className="space-y-4">
                     <li><Link href="#about">About</Link></li>
+                    <li><Link href="#education">Education</Link></li>
+                    <li><Link href="#experience">Experience</Link></li>
                     <li><Link href="#projects">Projects</Link></li>
                     <li><Link href="#contact">Contact</Link></li>
                 </ul>
