@@ -2,3 +2,154 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 100%;
+  max-width: 503px;
+  background-color: white;
+  padding-left: 49px;
+  padding-top: 95px;
+  box-sizing: border-box;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0
+}
+
+.subtitle {
+  color: #858585;
+  margin: 16 0 52 0;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin-right: 323px;
+  position: relative;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s ease;
+  padding: 7 0 7 16;
+  font-size: 18px;
+  font-weight: 500px;
+  position: relative
+}
+
+.nav-item.active {
+  font-weight: 700;
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #858585;
+  z-index: 0;
+}
+
+.nav-item:hover {
+  background-color: #eaeaea;
+  margin-left: 3px;
+}
+
+.indicator {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  height: 32px;
+  background-color: black;
+  transition: top 0.5s ease-in-out;
+  z-index: 1;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.section-text {
+  line-height: 1.6;
+}
+
+/* Education */
+.education-entry {
+  border-left: 4px solid gray;
+  padding-left: 12px;
+  margin-top: 16px;
+}
+
+.date-range {
+  font-size: 14px;
+  color: gray;
+}
+
+.education-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.education-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .content {
+    margin-left: 503px
+  }
+}

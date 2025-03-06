@@ -19,22 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="page-container">
+        <div className="container">
           <Sidebar />
-          <main className="main-content">{children}</main>
+          <main className="content">{children}</main>
         </div>
       </body>
     </html>
   );
 }
-
-// export default function Home() {
-//   return (
-//     <html lang="en">
-//       <body className={inter.className}>
-//         <h1>Testing Inter Font</h1>
-//         <p>This text should be in the Inter font.</p>
-//       </body>
-//     </html>
-//   );
-// }
